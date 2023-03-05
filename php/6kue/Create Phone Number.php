@@ -1,5 +1,8 @@
 <?php
 // => returns "(123) 456-7890"
+
+// Классное решение через sprintf
+// return sprintf("(%d%d%d) %d%d%d-%d%d%d%d", ...$digits);
 function createPhoneNumber($numbersArray) {
     $str = '';
     foreach ($numbersArray as $key => $value) {
